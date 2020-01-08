@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Box Gap</title>
+	<style>	
+		#container-flex{
+			background-color:black; display:flex; flex-direction:row;}
+
+		#container-flex .element{background-color:#ff0000; height:300px; width:500px; margin:20px;}
+		
+		#container-grid{
+			margin-top:30px;
+			background-color:black; display:grid; grid-template-columns: 1fr 1fr 1fr; gap:20px; padding:20px;
+		}
+
+		#container-grid .element{background-color:#ff0000; height:300px;}
+
+
+	</style>
+</head>
+<body>
+		<div id="container-flex">
+			<div class="element">Salil</div>
+			<div class="element">Deepak</div>
+			<div class="element">Naik</div>
+		</div>
+
+		<div id="container-grid">
+			<div class="element">Salil</div>
+			<div class="element">Deepak</div>
+			<div class="element">Naik</div>
+		</div>
+</body>
+</html>
