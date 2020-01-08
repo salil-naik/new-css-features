@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll Snap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{margin:0}
+		section{
+			width:400px; height:600px; margin:auto;
+			overflow-x:scroll;
+			overscroll-behavior: contain;
+			scroll-snap-type: x mandatory;
+			display:flex;
+		}
+
+		section > .picture{
+			 scroll-snap-align:start; 
+		}
+
+		.picture img{
+			width:400px; height:600px; object-fit: cover;
+		}
+
+		@media screen and (max-width:640px){
+			section{height:100vh; width:100vw;}
+			.picture img{
+				width:100vw; height:100vh;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>	
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+		</div>	
+	</section>
+</body>
+</html>
