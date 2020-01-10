@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grid Gap</title>
+	<style>	
+		body{font-size:50px; font-weight:bold;}
+		#container-flex{
+			background-color:black; display:flex; flex-direction:row;}
+
+		#container-flex .element{background-color:orange; height:300px; width:500px; margin:20px;}
+		
+		#container-grid{
+			margin-top:30px;
+			background-color:black; display:grid; grid-template-columns: 1fr 1fr 1fr; gap:20px; padding:20px;
+		}
+
+		#container-grid .element{background-color:orange; height:300px;}
+
+
+	</style>
+</head>
+<body>
+		<div id="container-flex">
+			<div class="element">A</div>
+			<div class="element">B</div>
+			<div class="element">C</div>
+		</div>
+
+		<div id="container-grid">
+			<div class="element">E</div>
+			<div class="element">F</div>
+			<div class="element">G</div>
+		</div>
+</body>
+</html>
+
+<style>
+	#container-flex{display:flex; flex-direction:row;}
+
+	#container-grid{
+		display:grid; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		gap:20px;
+		padding:20px;
+	}
+</style>
