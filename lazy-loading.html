@@ -7,32 +7,20 @@
 	<style>
 		body{background-color:#222222; color:white;}
 		img{display:block; margin-bottom:20px; width:300px; height:auto;}
+		#image-container{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
 	</style>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<h1>Aaaaahaaa. It's meme rewind time</h1>
-	<img src="memes/0.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/1.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/2.png" loading='lazy' data-aos="fade-up">
-	<img src="memes/3.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/5.jpg" loading='lazy' data-aos="fade-up">
-	<img src="https://www.rateameme.com/wp-content/uploads/2019/01/f0mjx96sd7d21.jpg" loading="lazy" data-aos="fade-up">
-	<img src="memes/6.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/7.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/8.jpg" loading='lazy' data-aos="fade-up">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjp18ObB-C0QCjDKAvxaeNABFisodjcEC0-jwgKEZrQ6F9xe7&s" loading="lazy" data-aos="fade-up">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptcrsjQYM2ps77OqrRoR-BoQGFCKIy9HYHvelZ6Ftb-aA09Vy&s" loading="lazy" data-aos="fade-up">
-	<img src="memes/9.jpg" loading='lazy' data-aos="fade-up">
-	<img src="memes/91.webp" loading='lazy' data-aos="fade-up">
-	<img src="memes/92.jpg" loading="lazy" data-aos="fade-up">
-	<img src="https://i.kym-cdn.com/photos/images/newsfeed/001/504/739/5c0.jpg" loading='lazy' data-aos="fade-up">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR13h4GyOQ3gD4qkCsJq-iGcnFY9y6S8TAnqBP6ZX_qByjgOfoL7w&s" loading="lazy" data-aos="fade-up">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKEnSZ72tRpIooyG2-viYLCiu5YiK2GkP5ozujz-NqehRn70Ei3A&s" loading="lazy" data-aos="fade-up">
-	<img src="https://images3.memedroid.com/images/UPLOADED60/5cebaaacc20a6.jpeg" loading="lazy" data-aos="fade-up">
-	<img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-12/22/1/asset/buzzfeed-prod-fastlane-01/sub-buzz-22884-1513923367-1.png?crop=592:439;0,0&downsize=700:*&output-format=auto&output-quality=auto" loading="lazy" data-aos="fade-up">
-	<img src="https://static.boredpanda.com/blog/wp-content/uploads/2019/05/season-8-episode-4-game-of-thrones-got-memes-64-5cd142fa9ab5f__700.jpg" loading="lazy" data-aos="fade-up">
-	<img src="https://media.thetab.com/blogs.dir/90/files/2019/05/text-document-idcards-collage-poster-advertisement-human-person.jpeg" loading="lazy" data-aos="fade-up">
+	<div id="image-container">
+		<!--images are retrieved from js-for-lazy-loading.js-->
+	</div>
+	
+	<script src="js-for-lazy-loading.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init();
