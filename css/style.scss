@@ -28,7 +28,7 @@ p.tagline{
 
     &__title{
         font-size:20px; 
-        color:white;
+        color:$secondary-color;
         margin-bottom:20px;
     }
 
@@ -40,17 +40,17 @@ p.tagline{
         padding:10px; background-color:rgba(245, 246, 248, 0.8); border-radius:5px; font-weight:16px;
     }
 
-    &.orange{
-        background-color:#FF9F24;
-    }
+    // &.orange{
+    //     background-color:#FF9F24;
+    // }
 
-    &.blue{
-        background-color:#6EB6FF;
-    }
+    // &.blue{
+    //     background-color:#6EB6FF;
+    // }
 
     a, a:visited, a:hover, a:active{color:black;}
 }
 
-@media only screen and (min-width:640){
+@media only screen and (min-width:640px){
     .card{margin:15px 10px;}
 }

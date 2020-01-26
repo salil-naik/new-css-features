@@ -557,7 +557,7 @@ p.tagline {
 
 .card__title {
   font-size: 20px;
-  color: white;
+  color: #425195;
   margin-bottom: 20px;
 }
 
@@ -574,15 +574,13 @@ p.tagline {
   font-weight: 16px;
 }
 
-.card.orange {
-  background-color: #FF9F24;
-}
-
-.card.blue {
-  background-color: #6EB6FF;
-}
-
 .card a, .card a:visited, .card a:hover, .card a:active {
   color: black;
+}
+
+@media only screen and (min-width: 640px) {
+  .card {
+    margin: 15px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
