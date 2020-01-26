@@ -4,19 +4,47 @@
 	<meta charset="UTF-8">
 	<title>CSS features to watch in 2020</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		li{margin-bottom:20px; font-size:18px;}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>CSS and Web features to watch in 2020</h1>
-	<ul>
-		<li><a href="focus-within.html">Focus Within</a></li>
-		<li><a href="scroll-snap-horizontal.html">Scroll Snap Horizontal</a></li>
-		<li><a href="scroll-snap-matrix.html">Scroll Snap Matrix</a></li>
-		<li><a href="prefers-color.html">Preferred color scheme</a></li>
-		<li><a href="grid-gap.html">Grid Gap</a></li>
-		<li><a href="lazy-loading.html">Native Lazy Loading</a></li>
-	</ul>
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x">
+			<div class="cell">
+				<h1>New Web Features</h1>
+				<p class="tagline">celebrating the 30 years of the web</p>
+			</div>
+		</div>
+
+		<!--card section-->
+		<div class="grid-x grid-margin-x">
+			<div class="cell large-3">
+				<div class="card blue">
+					<h3 class="card__title">Recently Added</h3>
+					<div class="card__items-container">
+						<a href="focus-within.html"><div class="card__item">Focus Within</div></a>
+						<a href="scroll-snap-horizontal.html"><div class="card__item">Scroll Snap Horizontal</div></a>
+						<a href="scroll-snap-matrix.html"><div class="card__item">Scroll Snap Matrix</div></a>
+						<a href="prefers-color.html"><div class="card__item">Preferred Color Scheme</div></a>
+						<a href="grid-gap.html"><div class="card__item">Grid Gap</div></a>
+						<a href="lazy-loading.html"><div class="card__item">Native Lazy Loading</div></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="cell large-3">
+				<div class="card orange">
+					<h3 class="card__title">CSS features</h3>
+					<div class="card__items-container">
+						<a href="focus-within.html"><div class="card__item">Focus Within</div></a>
+						<a href="scroll-snap-horizontal.html"><div class="card__item">Scroll Snap Horizontal</div></a>
+						<a href="scroll-snap-matrix.html"><div class="card__item">Scroll Snap Matrix</div></a>
+						<a href="prefers-color.html"><div class="card__item">Preferred Color Scheme</div></a>
+						<a href="grid-gap.html"><div class="card__item">Grid Gap</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

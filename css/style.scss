@@ -1,0 +1,52 @@
+@import 'product';
+
+$primary-color : #DFE2EF;
+$secondary-color: #425195;
+
+body{
+    background-color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color:$secondary-color;
+    font-size: 30px; font-weight: bold;
+    text-align:center;
+    margin:30px 0 10px 0;
+}
+
+p.tagline{
+    text-align:center; font-size:14px;
+    margin-bottom:20px;
+}
+
+
+.card{
+    background-color:white; border-radius:20px; 
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.09), -9px -9px 9px rgba(255, 255, 255, 0.2);
+    padding:30px; margin:15px 10px; 
+
+    &__title{
+        font-size:20px; 
+        color:white;
+        margin-bottom:20px;
+    }
+
+    &__items-container{
+        display:grid; grid-gap:10px
+    }
+
+    &__item{
+        padding:10px; background-color:rgba(245, 246, 248, 0.8); border-radius:5px; font-weight:16px;
+    }
+
+    &.orange{
+        background-color:#FF9F24;
+    }
+
+    &.blue{
+        background-color:#6EB6FF;
+    }
+
+    a, a:visited, a:hover, a:active{color:black;}
+}
