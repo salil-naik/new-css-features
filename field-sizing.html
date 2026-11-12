@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Content-Sized Form Controls | New CSS Features</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pages.css">
+	<style>
+		.field-sizing-demo {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 20px;
+		}
+
+		.control-card {
+			min-width: 0;
+			padding: 22px;
+			border: 1px solid #e2e8f0;
+			border-radius: 12px;
+			background: #f8faff;
+		}
+
+		.control-card h2 {
+			margin: 0 0 8px;
+			font-size: 18px;
+		}
+
+		.control-card p {
+			margin: 0 0 20px;
+			color: #596579;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		.control-example {
+			display: grid;
+			gap: 18px;
+		}
+
+		.control-example label {
+			display: grid;
+			gap: 7px;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.control-example input,
+		.control-example textarea,
+		.control-example select {
+			max-width: 100%;
+			padding: 10px 12px;
+			border: 1px solid #aab5c5;
+			border-radius: 7px;
+			background: #fff;
+			color: #172033;
+			font: inherit;
+			font-weight: 400;
+		}
+
+		.fixed-controls input,
+		.fixed-controls textarea,
+		.fixed-controls select {
+			width: 100%;
+		}
+
+		.content-controls input,
+		.content-controls textarea,
+		.content-controls select {
+			width: 100%;
+		}
+
+		@supports (field-sizing: content) {
+			.content-controls input,
+			.content-controls textarea,
+			.content-controls select {
+				field-sizing: content;
+				width: auto;
+				justify-self: start;
+			}
+
+			.content-controls input {
+				min-width: 12ch;
+			}
+
+			.content-controls textarea {
+				min-width: 12ch;
+				min-height: 3lh;
+				max-height: 10lh;
+			}
+
+			.content-controls select {
+				min-width: 12ch;
+			}
+		}
+
+		.support-note {
+			margin: 20px 0 0;
+			color: #596579;
+			font-size: 13px;
+		}
+
+		@media (max-width: 700px) {
+			.field-sizing-demo {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<a class="site-brand" href="index.html">New CSS Features</a>
+		<a class="back-link" href="index.html">← All features</a>
+	</header>
+	<main class="feature-page">
+		<div class="feature-heading">
+			<p class="feature-kicker">CSS Forms · Baseline 2026</p>
+			<h1>Content-Sized Form Controls</h1>
+			<p class="feature-description">The <code>field-sizing: content</code> property lets inputs, textareas, and selects size themselves to fit their content. Edit the controls to compare fixed widths with content-based sizing.</p>
+		</div>
+		<section class="feature-demo">
+			<div class="field-sizing-demo">
+				<div class="control-card fixed-controls">
+					<h2>Fixed size</h2>
+					<p>Each control fills the available width, even when its content is short.</p>
+					<div class="control-example">
+						<label>Text input
+							<input type="text" value="Type to edit this field">
+						</label>
+						<label>Textarea
+							<textarea rows="3">Add a short note</textarea>
+						</label>
+						<label>Select
+							<select>
+								<option>Small</option>
+								<option>A much longer option</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="control-card content-controls">
+					<h2>Size to content</h2>
+					<p>With <code>field-sizing: content</code>, controls grow or shrink as their content changes.</p>
+					<div class="control-example">
+						<label>Text input
+							<input type="text" value="Type to edit this field">
+						</label>
+						<label>Textarea
+							<textarea rows="3">Add a short note</textarea>
+						</label>
+						<label>Select
+							<select>
+								<option>Small</option>
+								<option>A much longer option</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+			<p class="support-note">Browsers without <code>field-sizing</code> support keep the usual control sizing.</p>
+		</section>
+	</main>
+</body>
+</html>

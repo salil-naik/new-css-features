@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Scroll Snap</title>
+	<title>Two-Dimensional Scroll Snap | New CSS Features</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pages.css">
 	<style>
-		body{margin:0}
 		section{
 			width:400px; height:400px; margin:auto;
 			overflow:scroll;
@@ -34,7 +34,18 @@
 	</style>
 </head>
 <body>
-	<section>
+	<header class="site-header">
+		<a class="site-brand" href="index.html">New CSS Features</a>
+		<a class="back-link" href="index.html">← All features</a>
+	</header>
+	<main class="feature-page">
+		<div class="feature-heading">
+			<p class="feature-kicker">CSS Scrolling</p>
+			<h1>Two-Dimensional Scroll Snap</h1>
+			<p class="feature-description">Scroll in either direction to move through the image grid and snap to each item.</p>
+		</div>
+		<div class="feature-demo">
+		<section>
 		<div class="picture">
 			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
 		</div>
@@ -98,7 +109,9 @@
 		<div class="picture">
 			<img src="https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
 		</div>	
-	</section>
+		</section>
+		</div>
+	</main>
 </body>
 </html>
 

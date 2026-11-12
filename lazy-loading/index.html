@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Native Lazy Loading</title>
+	<title>Native Lazy Loading | New CSS Features</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/pages.css">
 	<style>
-		body{background-color:#222222; color:white;}
-		img{display:block; margin-bottom:20px; width:300px; height:auto;}
+		.feature-demo{background-color:#222222; color:white;}
+		.feature-demo img{display:block; margin-bottom:20px; width:300px; height:auto;}
 	</style>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Aaaaahaaa. It's meme rewind time</h1>
+	<header class="site-header">
+		<a class="site-brand" href="../index.html">New CSS Features</a>
+		<a class="back-link" href="../index.html">← All features</a>
+	</header>
+	<main class="feature-page">
+		<div class="feature-heading">
+			<p class="feature-kicker">HTML Loading</p>
+			<h1>Native Lazy Loading</h1>
+			<p class="feature-description">The <code>loading="lazy"</code> attribute defers off-screen images until they are close to the viewport.</p>
+		</div>
+		<section class="feature-demo">
+		<h2>Aaaaahaaa. It's meme rewind time</h2>
 	<div id="image-container">
 		<img src="../memes/error.jpeg" loading="lazy" data-aos="fade-up">
 		<img src="../../memes/0.jpg" loading='lazy' data-aos="fade-up">
@@ -42,5 +54,7 @@
 	<script>
 		AOS.init();
 	</script>
+		</section>
+	</main>
 </body>
 </html>
