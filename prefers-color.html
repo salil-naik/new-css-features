@@ -2,28 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About Salil</title>
+	<title>Preferred Color Scheme | New CSS Features</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pages.css">
 	<style>	
-		body{background-color:#ffffff; color:#222222;margin:0; padding:30px; font-family: 'Poppins', sans-serif;}
+		.feature-demo{background-color:#ffffff; color:#222222;padding:30px; font-family: 'Poppins', sans-serif;}
 		p{font-size:20px;}
-		a{color:red;}
+		.feature-demo a{color:red;}
 
 		@media(prefers-color-scheme : dark){
-			body{background-color:#222222; color:white;}
-			a{color:orange;}
+			.feature-demo{background-color:#222222; color:white;}
+			.feature-demo a{color:orange;}
 		}
 
 		@media(prefers-color-scheme : light){
-			body{background-color:white; color:#222222;}
-			a{color:red;}
+			.feature-demo{background-color:white; color:#222222;}
+			.feature-demo a{color:red;}
 		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<header class="site-header">
+		<a class="site-brand" href="index.html">New CSS Features</a>
+		<a class="back-link" href="index.html">← All features</a>
+	</header>
+	<main class="feature-page">
+		<div class="feature-heading">
+			<p class="feature-kicker">User Preferences</p>
+			<h1>Preferred Color Scheme</h1>
+			<p class="feature-description">The <code>prefers-color-scheme</code> media feature lets a page respond to a visitor’s light or dark theme preference.</p>
+		</div>
+		<section class="feature-demo">
 		<h1>about Salil Naik</h1>
 		<p>Salil Naik is a front-end developer and coding enthusiast. He is pursuing BE Computer at Goa College of Engineering and has represented his college for various competitions in top tier colleges like BITS Goa, IIT Bombay and Harvard College. He is the recipient of the 'Mobile Excellence Award' which was awarded to his website tedxgec, by Awwwards in association with Google. He also shares the secrets of his success and the principles of hustling in his podcast <a href="https://open.spotify.com/show/5NUCt7kFlBhtenJmPPMozK" target="_blank">The Hustle Radio</a>.</p>
 		<p>Please follow him on <a href="https://www.instagram.com/_salilnaik_/" target="_blank">Instagram</a></p>
+		</section>
+	</main>
 </body>
 </html>

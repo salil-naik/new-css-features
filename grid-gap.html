@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Grid Gap</title>
+	<title>Grid Gap | New CSS Features</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pages.css">
 	<style>	
-		body{font-size:50px; font-weight:bold;}
+		.feature-demo{font-size:50px; font-weight:bold; overflow-x:clip;}
 		#container-flex{
 			background-color:black; display:flex; flex-direction:row;}
 
@@ -21,6 +23,17 @@
 	</style>
 </head>
 <body>
+	<header class="site-header">
+		<a class="site-brand" href="index.html">New CSS Features</a>
+		<a class="back-link" href="index.html">← All features</a>
+	</header>
+	<main class="feature-page">
+		<div class="feature-heading">
+			<p class="feature-kicker">CSS Layout</p>
+			<h1>Grid Gap</h1>
+			<p class="feature-description">Compare spacing with margins in Flexbox and the native gap property in CSS Grid.</p>
+		</div>
+		<section class="feature-demo">
 		<div id="container-flex">
 			<div class="element">A</div>
 			<div class="element">B</div>
@@ -32,6 +45,8 @@
 			<div class="element">F</div>
 			<div class="element">G</div>
 		</div>
+		</section>
+	</main>
 </body>
 </html>
 
